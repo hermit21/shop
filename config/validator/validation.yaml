@@ -1,0 +1,26 @@
+App\Entity\Users:
+    properties:
+        name:
+            - Regex:
+                pattern: '/\d/'
+                match:   false
+                message: Your name cannot contain a number
+            - NotBlank:
+                message:  Your name cannot be blank
+        surname:
+            - Regex:
+                pattern: '/\d/'
+                match:   false
+                message: Your surname cannot contain a number
+            - NotBlank:
+                message:  Your surname cannot be blank
+        city:
+            - Regex:
+                pattern: '/\d/'
+                match:   false
+                message: Your city cannot contain a number
+            - NotBlank:
+                message:  Your city cannot be blank
+        address:
+            - NotBlank:
+                message:  Your address cannot be blank
